@@ -3,8 +3,47 @@ body {
 	font-family:Arial;
 }
 
+ul {
+	list-style-type:none;
+	padding-right:20px;
+	vertical-align:middle;
+}
+
+li {
+	display:inline;
+	padding-left:10px;
+	vertical-align:middle;
+}
+
+input[type="text"]
+{
+    font-size:18px;
+}
+
+/* couldn't figure out how to select the 2nd and 3rd children of the list, used this instead*/
+li:nth-child(2) {
+	float:right;
+}
+
+li:nth-child(3) {
+	float:right;
+}
+/* see above comment*/
+
 a:link {
 	text-decoration:none;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+a.search {
+	color:blue;
+}
+
+a.search:hover {
+	text-decoration:underline;
 }
 
 .nav {
@@ -32,35 +71,7 @@ a:link {
 	background-color:yellow;
 }
 
-ul {
-	list-style-type:none;
-	padding-right:20px;
-	vertical-align:middle;
-}
-
-li {
-	display:inline;
-	padding-left:10px;
-	vertical-align:middle;
-}
-
-li:nth-child(2) {
-	float:right;
-}
-
-li:nth-child(3) {
-	float:right;
-}
-
-
-
-input[type="text"]
-{
-    font-size:18px;
-}
-
 .form {
-	width:50%;
 	font-size:24px;
 	padding-top:100px;
 	padding-left:50px;
@@ -77,29 +88,21 @@ input[type="text"]
 	border-top-left-radius:5px;
 	border-bottom-left-radius:5px;
 	text-align:left;
-	padding-right:25px;
-		padding-top:5px;
-	padding-bottom:5px;
+	padding:5px 25px 5px 25px;
 }
 
 .midbar.midsearch {
 	text-align:center;
-	padding-left:25px;
-	padding-right:25px;
-	padding-top:5px;
-	padding-bottom:5px;
+	padding:5px 25px 5px 25px;
 	border:1px solid lightgrey;
 }
 
 .midbar.rightsearch {
-	padding-left:10px;
 	border:1px solid lightgrey;
 	border-top-right-radius:5px;
 	border-bottom-right-radius:5px;
 	text-align:right;
-	padding-right:25px;
-		padding-top:5px;
-	padding-bottom:5px;
+	padding:5px 25px 5px 10px;
 }
 
 .results_container {

@@ -1,56 +1,67 @@
 <!DOCTYPE html>
 
 <html>
-<head>
- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
- <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
-<meta name="description" content="Welcome to Gregslist, shopping, classifieds, searches all in one!">
+	<head>
+ 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+ 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<meta name="description" content="Welcome to Gregslist, shopping, classifieds, searches all in one!">
 	<title>Welcome to Gregslist!</title>
-</head>
+	</head>
 <body>
 
+<!--start the nav-->
+<header>
 <nav>
 	<div class="nav">
-	<div><ul><li><a href="#">Greg's List</a>
-	<li><a href="#">Account</a></li>
+	<div><ul><li><a href="#">Greg's List</a></li>
+	<li><a href="#">Account</a></li> <!--couldn't figure out how to select the 2nd and 3rd child here of the UL, see the CSS.  Had to switch the list items around to get this to work -->
 	<li><a href="#">Post</a></li>
 	</ul>
-
 	</div>
 </div>
 </nav>
+</header>
 
+<!--start the form input-->
+<section>
 <div class="form">
-<form>
-<input type="text" name="jobsearch" placeholder="Search software jobs">
-<input type="submit" class="btn fa-input" value="&#xf002">
-</form>
+	<form>
+	<input type="text" name="jobsearch" placeholder="Search software jobs">
+	<input type="submit" class="fa-input" value="&#xf002">
+	</form>
 </div>
+</section>
 
+<!--searchbar-->
+<section>
 <div class="midbar">
 	<div class="midbar leftsearch">
-	&#60; Prev
+	&#60; <a href="#">Prev</a>
 	</div>
 	<div class="midbar midsearch">
 	1 to 100 of 179
 	</div>
 	<div class="midbar rightsearch">
-	next &#62;
+	<a href="#">next</a> &#62;
 	</div>
 </div>
+</section>
 
+<!--results box-->
+<section>
 <div class="results_container">
 	<div class="row">
-		<div class="cell"><i class="fa fa-star-o" aria-hidden="true"></i></div><div class="cell">June 22</div><div class="cell title">Technical Project Manager</div><div class="cell">Midtown East</div>
+		<div class="cell"><i class="fa fa-star-o" aria-hidden="true"></i></div><div class="cell">June 22</div><div class="cell title"><a href="#" class="search">Technical Project Manager</a></div><div class="cell">Midtown East</div>
 	</div>
 	<div class="row">	
-		<div class="cell"><i class="fa fa-star-o" aria-hidden="true"></i></div><div class="cell">June 21</div><div class="cell title">Frontend Developer</div><div class="cell">SoHo</div>
+		<div class="cell"><i class="fa fa-star-o" aria-hidden="true"></i></div><div class="cell">June 21</div><div class="cell title"><a href="#" class="search">Frontend Developer</a></div><div class="cell">SoHo</div>
 	</div>
 	<div class="row">
-		<div class="cell"><i class="fa fa-star-o" aria-hidden="true"></i></div><div class="cell">June 20</div><div class="cell title">Senior Python Developer / Cofounder</div><div class="cell">Flatiron</div>
+		<div class="cell"><i class="fa fa-star-o" aria-hidden="true"></i></div><div class="cell">June 20</div><div class="cell title"><a href="#" class="search">Senior Python Developer / Cofounder</a></div><div class="cell">Flatiron</div>
 	</div>
 </div>
+</section>
 
 </body>
 </html>
